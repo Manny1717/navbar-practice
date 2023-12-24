@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Logo from '../images/Apple-logo.png'
+import {AiFillBank} from 'react-icons/ai'
 import {FaBars, FaTimes} from 'react-icons/fa'
 import './Navbar.css'
 
@@ -14,7 +14,7 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className="logo">
-                <img src={Logo} alt='logo' />
+                <AiFillBank style={{color: 'white'}} size={50} />
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                 <li className="nav-item"><a href='/'>Home</a></li>
